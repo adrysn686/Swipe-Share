@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwipeShare - Meal Swipe Exchange Platform</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 80px 20px; text-align: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; }
+        .hero .subtitle { font-size: 1.5rem; margin-bottom: 30px; color: #bfdbfe; }
+        .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .btn { background: white; color: #3b82f6; padding: 15px 30px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; margin: 10px; transition: all 0.3s; }
+        .btn:hover { background: #f0f9ff; transform: translateY(-2px); }
+        .btn-outline { background: transparent; border: 2px solid white; color: white; }
+        .btn-outline:hover { background: white; color: #3b82f6; }
+        .navbar { background: white; padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #3b82f6; }
+        .features { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 20px; color: #1f2937; }
+        .features .subtitle { text-align: center; font-size: 1.2rem; color: #6b7280; margin-bottom: 60px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .feature { text-align: center; padding: 40px 20px; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e5e7eb; }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+        .feature h3 { font-size: 1.5rem; margin-bottom: 15px; color: #1f2937; }
+        .feature p { color: #6b7280; }
+        .stats { background: #f8fafc; padding: 80px 20px; }
+        .stats h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; color: #1f2937; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 800px; margin: 0 auto; text-align: center; }
+        .stat { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .stat-number { font-size: 2.5rem; font-weight: bold; color: #3b82f6; margin-bottom: 10px; }
+        .notice { background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 20px; text-align: center; margin: 40px 20px; border-radius: 12px; }
+        .notice h3 { margin-bottom: 10px; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .navbar { padding: 10px; }
+            .logo { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🍽️ SwipeShare</div>
+        <div>
+            <a href="#features" class="btn" style="background: transparent; color: #3b82f6; padding: 10px 15px;">Features</a>
+            <a href="#stats" class="btn" style="background: transparent; color: #3b82f6; padding: 10px 15px;">About</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>🍽️ SwipeShare</h1>
+        <div class="subtitle">Share Your Meal Swipes, Save Money & Food</div>
+        <p>Connect with fellow students to exchange unused meal swipes. Never let a swipe go to waste again! Built with React, Node.js, and MongoDB.</p>
+        
+        <div class="notice">
+            <h3>✅ Full-Stack Application Complete!</h3>
+            <p>This is a demo of the SwipeShare platform. The full React app with authentication, dashboard, and backend API is ready for deployment.</p>
+        </div>
+        
+        <div>
+            <a href="test-website.html" class="btn">View Full Demo</a>
+            <a href="https://github.com/adrysn686/Swipe-Share" class="btn btn-outline" target="_blank">View Code on GitHub</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>How SwipeShare Works</h2>
+        <p class="subtitle">Simple, safe, and convenient way to share meal swipes with your campus community</p>
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="feature-icon">📋</div>
+                <h3>List Your Swipes</h3>
+                <p>Post available meal swipes with time slots, dining hall locations, and pricing. Set your own rates or offer swipes for free to help fellow students.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Find Swipes</h3>
+                <p>Browse available swipes near you with smart filters for time, location, price, and ratings. Find exactly what you need, when you need it.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <h3>Meet & Eat</h3>
+                <p>Coordinate with other students through our built-in messaging system. Schedule meet-ups and enjoy meals together while saving money.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="stats">
+        <h2>Platform Features</h2>
+        <div class="stats-grid">
+            <div class="stat">
+                <div class="stat-number">🔐</div>
+                <div>Secure Authentication</div>
+                <small style="color: #6b7280;">Student email verification & JWT tokens</small>
+            </div>
+            <div class="stat">
+                <div class="stat-number">📱</div>
+                <div>Mobile Responsive</div>
+                <small style="color: #6b7280;">Beautiful UI with Tailwind CSS</small>
+            </div>
+            <div class="stat-number">💬</div>
+                <div>Real-time Messaging</div>
+                <small style="color: #6b7280;">Socket.io for instant communication</small>
+            </div>
+            <div class="stat">
+                <div class="stat-number">⭐</div>
+                <div>Rating System</div>
+                <small style="color: #6b7280;">User reviews and success tracking</small>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        console.log('🍽️ SwipeShare - Full-Stack Meal Swipe Exchange Platform');
+        console.log('Built with: React, Node.js, Express, MongoDB, Socket.io, Tailwind CSS');
+        console.log('Features: Authentication, Real-time messaging, Responsive design, Rating system');
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
