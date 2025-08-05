@@ -140,11 +140,9 @@ SMTP_PASS=your-app-password
 
 ## 📱 **Screenshots**
 
-- Beautiful homepage with hero section
 - User registration and login forms
 - Interactive dashboard with swipe listings
 - Mobile-responsive design
-- Modern card-based UI
 
 ## 🤝 **Contributing**
 
